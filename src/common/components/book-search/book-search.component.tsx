@@ -18,7 +18,7 @@ export default function BookSearch() {
   });
 
   useEffect(() => {
-    if (!showResultsPopup && !!debouncedSearchQuery.length) {
+    if (!showResultsPopup && !!debouncedSearchQuery.length && results.length) {
       setShowResultsPopup(true);
     }
   }, [results]);
@@ -29,6 +29,7 @@ export default function BookSearch() {
 
   useOnClickOutside(searchResultsRef, () => {
     setShowResultsPopup(false);
+    setSearchQuery("");
     clearSearch();
   });
 

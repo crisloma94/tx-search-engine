@@ -1,5 +1,8 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
-export const StyledHomepage = styled.div`
+export const StyledHomepage = styled.div(
+  ({ theme: { spaces } }) => css`
   display: grid;
-`;
+  padding: ${spaces.medium}
+  `,
+);

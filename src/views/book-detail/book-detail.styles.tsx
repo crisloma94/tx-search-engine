@@ -6,7 +6,7 @@ export const StyledBookDetail = styled.div(
     display: grid;
     background-color: ${colors.lightSecondary};
     padding: ${spaces.large};
-    grid-template-columns: auto 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 300px));
     gap: ${spaces.large};
     margin-top: ${spaces.large};
 
