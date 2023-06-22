@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Homepage view test suite Should match snapshot 1`] = `
+<div>
+  <div
+    class="sc-bgqQcB kuwXLl"
+  >
+    <div
+      class="sc-dicizt lanJGv"
+    >
+      <h1>
+        Start searching for books!
+      </h1>
+    </div>
+  </div>
+</div>
+`;

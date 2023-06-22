@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Book detail view test suite Should match snapshot 1`] = `
+<div>
+  <div
+    class="sc-gTRrQi fUVnky"
+  >
+    <div
+      class="sc-ewnqHT ZpWIw"
+    >
+      <img
+        alt="Default book cover"
+        class="sc-bgqQcB ccLtkH book-cover"
+        src="https://covers.openlibrary.org/b/id/5678-M.jpg"
+      />
+      <div
+        class="book-detail__info"
+      >
+        <h1
+          class="book-detail__title"
+        >
+          Title test (1984)
+        </h1>
+        <h2
+          class="book-detail__author"
+        >
+          Author name test
+        </h2>
+        <p
+          class="book-detail__publisher"
+        >
+          Publisher example
+        </p>
+        <a
+          href="https://www.amazon.es/s?k=Title test+Author name test"
+          target="_blank"
+        >
+          Search on amazon
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+`;

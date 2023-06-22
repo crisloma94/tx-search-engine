@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Book cover component test suite Should match snapshot 1`] = `
+<div>
+  <img
+    alt="Default book cover"
+    class="sc-bgqQcB ccLtkH book-cover"
+    src="https://covers.openlibrary.org/b/id/5678-M.jpg"
+  />
+</div>
+`;
+
+exports[`Book cover component test suite Should match snapshot with default cover 1`] = `
+<div>
+  <img
+    alt="Default book cover"
+    class="sc-bgqQcB ccLtkH book-cover"
+    src="https://fakeimg.pl/80x112/9381ff/9381ff"
+  />
+</div>
+`;

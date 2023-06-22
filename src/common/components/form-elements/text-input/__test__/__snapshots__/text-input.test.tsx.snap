@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text input component test suite Should match snapshot 1`] = `
+<div>
+  <input
+    class="sc-bgqQcB gWCqZe"
+    name="Text input name"
+    placeholder="Text input placeholder"
+    type="text"
+    value="Text input value"
+  />
+</div>
+`;

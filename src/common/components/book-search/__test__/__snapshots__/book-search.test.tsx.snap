@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Book search component test suite Should match snapshot 1`] = `
+<div>
+  <div
+    class="sc-gTRrQi iSzjiZ"
+  >
+    <input
+      class="sc-bgqQcB gWCqZe"
+      name="search"
+      placeholder="Search..."
+      type="text"
+      value=""
+    />
+  </div>
+</div>
+`;

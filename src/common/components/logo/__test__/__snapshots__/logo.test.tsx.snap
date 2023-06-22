@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Logo component test suite Should match snapshot 1`] = `
+<div>
+  <img
+    alt="Logo"
+    src="test-file-stub"
+  />
+  <span>
+    HappyBooks
+  </span>
+</div>
+`;

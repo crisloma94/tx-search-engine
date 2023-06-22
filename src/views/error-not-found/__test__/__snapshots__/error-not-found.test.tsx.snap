@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Error not found view test suite Should match snapshot 1`] = `
+<div>
+  <div
+    class="sc-bgqQcB kuwXLl"
+  >
+    <h1>
+      Page not found
+    </h1>
+  </div>
+</div>
+`;

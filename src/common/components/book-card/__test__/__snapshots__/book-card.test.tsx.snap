@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Book card component test suite Should match snapshot 1`] = `
+<div>
+  <li
+    class="sc-gTRrQi gGrCkx"
+  >
+    <img
+      alt="Default book cover"
+      class="sc-bgqQcB ccLtkH book-cover"
+      src="https://covers.openlibrary.org/b/id/5678-M.jpg"
+    />
+    <div
+      class="book-card__info"
+    >
+      Title test (1984)
+      <p
+        class="book-card__author"
+      >
+        Author name test
+      </p>
+      <p
+        class="book-card__publisher"
+      >
+        Publisher example
+      </p>
+      <a
+        href="https://www.amazon.es/s?k=Title test+Author name test"
+        target="_blank"
+      >
+        Search on amazon
+      </a>
+    </div>
+  </li>
+</div>
+`;

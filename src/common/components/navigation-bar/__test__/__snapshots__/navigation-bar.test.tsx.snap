@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navigation bar component test suite Should match snapshot 1`] = `
+<div>
+  <nav
+    class="sc-kcuKUB gZBXOh"
+  >
+    <div
+      class="sc-kPTPQs bmNzVv"
+    >
+      <img
+        alt="Logo"
+        src="test-file-stub"
+      />
+      <span>
+        HappyBooks
+      </span>
+      <div
+        class="sc-gTRrQi iSzjiZ"
+      >
+        <input
+          class="sc-bgqQcB gWCqZe"
+          name="search"
+          placeholder="Search..."
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+  </nav>
+</div>
+`;
