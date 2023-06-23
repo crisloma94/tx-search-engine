@@ -17,7 +17,6 @@ export const useBookSearch = ({ query }: useBookSearchProps) => {
 
   useEffect(() => {
     const fetchData = async () => {
-      setLoading(true);
       setError(null);
       try {
         if (query.length > 2) {
@@ -34,15 +33,15 @@ export const useBookSearch = ({ query }: useBookSearchProps) => {
             ...response.data.docs,
           ]);
           setTotalResults(response.data.numFound);
-          setLoading(false);
         }
       } catch (error) {
         setError('There has been an error searching for books');
-        setLoading(false);
       }
     };
 
-    fetchData();
+    setLoading(true);
+    fetchData().then(() => setLoading(false));    
+    
   }, [offsetParam, query]);
 
   const loadMore = () => {
@@ -56,7 +55,6 @@ export const useBookSearch = ({ query }: useBookSearchProps) => {
     setResults([]);
     setTotalResults(0);
     setOffsetParam(0);
-    setLoading(false);
     setError(null);
   };
 

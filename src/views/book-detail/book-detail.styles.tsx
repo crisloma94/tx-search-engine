@@ -9,6 +9,7 @@ export const StyledBookDetail = styled.div(
     grid-template-columns: repeat(auto-fit, minmax(100px, 300px));
     gap: ${spaces.large};
     margin-top: ${spaces.large};
+    border: 1px solid ${colors.secondary};
 
     ${StyledBookCover} {
       width: 15rem;

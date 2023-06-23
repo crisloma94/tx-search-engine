@@ -33,7 +33,7 @@ Use the appropriate APIs listed here: https://openlibrary.org/dev/docs/api/
 - [x] Navigate to book details page
 - [x] Show recently visited books
 - [x] Unit testing with jest and react-testing-library
-- [x] Responsive
+- [x] Responsive without media queries
 
 # Setup
 
@@ -50,13 +50,13 @@ npm start
 
 Runs the app in dev mode
 
-## `npm build`
+## `npm run build`
 
 Builds the app for production environment
 
 ## `npm run preview`
 
-Previews Vite projects in a production-like environment
+After building the project, you can preview it in a production-like environment with this command
 
 ## `npm run test`
 

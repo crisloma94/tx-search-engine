@@ -11,7 +11,7 @@ import { StyledBookDetail } from './book-detail.styles';
 export default function BookDetail() {
   const dispatch = useAppDispatch();
   const params = useParams();
-  const { bookData, error } = useGetBook(params.bookId as string);
+  const { bookData, error, loading } = useGetBook(params.bookId as string);
 
   useEffect(() => {
     if (!isObjectEmpty(bookData)) {
@@ -31,21 +31,23 @@ export default function BookDetail() {
 
   return (
     <PageContainer>
-      <StyledBookDetail>
-        <BookCover book={bookData} />
-        <div className="book-detail__info">
-          <h1 className="book-detail__title">{`${bookData.title} (${bookData.first_publish_year})`}</h1>
-          <h2 className="book-detail__author">{authorName}</h2>
-          <p className="book-detail__publisher">
-            {bookData.publisher && bookData.publisher[0]}
-          </p>
-          <a
-            href={`https://www.amazon.es/s?k=${bookData.title}+${authorName}`}
-            target="_blank"
-          >
-            Search on amazon
-          </a>
-        </div>
+       <StyledBookDetail>
+        {!!bookData && !loading && <>
+          <BookCover book={bookData} />
+          <div className="book-detail__info">
+            <h1 className="book-detail__title">{`${bookData.title} (${bookData.first_publish_year})`}</h1>
+            <h2 className="book-detail__author">{authorName}</h2>
+            <p className="book-detail__publisher">
+              {bookData.publisher && bookData.publisher[0]}
+            </p>
+            <a
+              href={`https://www.amazon.es/s?k=${bookData.title}+${authorName}`}
+              target="_blank"
+            >
+              Search on amazon
+            </a>
+          </div>
+        </>}
       </StyledBookDetail>
     </PageContainer>
   );
